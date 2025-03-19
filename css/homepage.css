@@ -9,21 +9,6 @@
 	--white: rgb(182, 182, 182);
 }
 
-.socials {
-	position: fixed;
-	top: 35%;
-	right: 0;
-	background-color: rgb(120, 153, 0);
-	width: 30px;
-	padding: 10px 5px;
-	border-radius: 20px 0 0 20px;
-	visibility: hidden;
-}
-
-.socials img {
-	width: 100%;
-}
-
 .divspace {
 	height: 200px;
 }
@@ -622,13 +607,7 @@ button:hover {
 		display: flex;
 		align-items: flex-end;
 		box-shadow: 0px 10px 20px -5px rgb(0, 0, 0);
-		/*box-shadow: inset 0px 10px 30px -5px rgba(0, 0, 0, 0.456);*/
 	}
-
-	/*
-	.card > .row > .description h4 {
-		margin-top: 30px;
-	}*/
 
 	input {
 		width: 100%;

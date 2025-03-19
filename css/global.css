@@ -25,8 +25,6 @@ body {
 }
 
 nav {
-	/*
-	background-color: rgb(35, 43, 114);*/
 	position: fixed;
 	z-index: 1;
 	width: 100%;
@@ -297,7 +295,6 @@ h7:hover {
 
 p {
 	font-size: 1.2vw;
-	/*margin: 0 50px 0px 50px;*/
 }
 
 .scroll {
@@ -315,5 +312,4 @@ p {
 pre {
 	font-size: 1.2vw;
 	color: white;
-	/*margin: 0 50px 0px 50px;*/
 }
