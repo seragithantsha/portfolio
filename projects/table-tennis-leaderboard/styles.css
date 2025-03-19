@@ -1,0 +1,10 @@
+html {
+	scroll-behavior: smooth;
+	font-family: Tahoma;
+	font-size: 10px;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(255, 255, 255);
+}

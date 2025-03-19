@@ -1,0 +1,96 @@
+.cont {
+	width: 100%;
+}
+.contact-image {
+	display: flex;
+	justify-content: center;
+	margin-top: 0px;
+	width: 100%;
+}
+
+.contact-image img {
+	width: 70%;
+	position: absolute;
+	justify-content: center;
+	background-size: contain;
+	padding: 20px;
+	border-radius: 30px;
+	margin-top: -140px;
+	opacity: 80%;
+}
+
+.contact-image h3 {
+	transition: 0.7s;
+	display: flex;
+	position: absolute;
+	top: 50px;
+	text-shadow: 5px 5px 25px black;
+}
+.cont {
+	transition: 0.7s;
+}
+
+.divspace {
+	height: 100px;
+}
+
+.contact-section {
+	text-align: center;
+	padding: 250px;
+	background-image: -webkit-linear-gradient(
+		rgb(41, 43, 53),
+		rgb(38, 42, 61),
+		rgba(35, 43, 114, 0.411),
+		rgba(35, 43, 114, 0.527),
+		rgba(35, 43, 114, 0.411),
+		rgb(38, 42, 61),
+		rgb(41, 43, 53)
+	);
+}
+
+.contact-section h3 {
+	font-size: 29px;
+}
+
+.contact-section ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+section .info-line {
+	font-size: 22px;
+	a {
+		color: rgb(233, 227, 110);
+	}
+}
+
+section ul a {
+	color: rgb(233, 227, 110);
+}
+
+section {
+	font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+	.contact-section {
+		padding: 250px 100px;
+	}
+	.contact-image img {
+		width: 70%;
+		position: absolute;
+		justify-content: center;
+		background-size: contain;
+		padding: 20px;
+		border-radius: 30px;
+		margin-top: -60px;
+		opacity: 80%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.contact-section {
+		padding: 250px 50px;
+	}
+}

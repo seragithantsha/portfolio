@@ -1,0 +1,121 @@
+body {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: hsl(0, 0%, 95%);
+}
+h7 {
+	z-index: -2;
+}
+.photo {
+	width: 80%;
+	height: 20vw;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	overflow-y: scroll;
+	border: 10px black;
+	border-radius: 10px;
+	box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.37);
+}
+.photo img {
+	size: cover;
+	width: 100%;
+	height: 100vh;
+
+	z-index: -3;
+	box-shadow: 0px 0px 25px black;
+}
+
+#calculator {
+	z-index: 1;
+	zoom: 50%;
+	font-family: montserrat, Arial, sans-serif;
+	background-color: rgb(26, 26, 26);
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.253);
+	border-radius: 15px;
+	max-width: 510px;
+	overflow: hidden;
+}
+
+#display {
+	width: 90%;
+	margin-left: 15px;
+	margin-top: 15px;
+	font-size: 4rem;
+	font-family: montserrat;
+	color: white;
+	text-align: left;
+	border: none;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: rgba(77, 76, 76, 0.174);
+}
+
+#keys {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 15px;
+	padding: 25px;
+}
+
+button {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	border: none;
+	background-color: hsl(0, 0%, 20%);
+	color: white;
+	font-size: 3rem;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: hsl(0, 0%, 40%);
+	transition: 0.25s;
+}
+
+button:active {
+	background-color: hsl(0, 0%, 50%);
+}
+
+.operator-btn {
+	background-color: hsl(35, 100%, 45%);
+}
+.operator-btn:hover {
+	background-color: hsl(35, 100%, 50%);
+	transition: 0.25s;
+}
+
+.operator-btn:active {
+	background-color: hsl(35, 100%, 65%);
+	transition: 0.25s;
+}
+
+.operator2-btn {
+	background-color: hsl(187, 78%, 31%);
+}
+.operator2-btn:hover {
+	background-color: hsl(187, 78%, 34%);
+	transition: 0.25s;
+}
+
+.operator2-btn:active {
+	background-color: hsl(187, 78%, 42%);
+	transition: 0.25s;
+}
+
+.operator3-btn {
+	background-color: hsl(146, 79%, 22%);
+}
+.operator3-btn:hover {
+	background-color: hsl(146, 79%, 27%);
+	transition: 0.25s;
+}
+
+.operator3-btn:active {
+	background-color: hsl(146, 79%, 32%);
+	transition: 0.25s;
+}
