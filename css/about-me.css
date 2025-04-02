@@ -82,6 +82,18 @@ section a {
 	padding: 10px;
 }
 
+@media screen and (max-width: 440px) {
+	.about-me {
+		h3 {
+			font-size: 8vw;
+		}
+		p {
+			padding: 0 5vw;
+			font-size: 4vw;
+		}
+	}
+}
+
 @media screen and (max-width: 1000px) {
 	.headshot-about {
 		padding: 10px;

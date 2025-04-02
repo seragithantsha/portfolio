@@ -125,7 +125,7 @@
 }
 .projects h1 {
 	text-align: center;
-	padding-top: 180px;
+	padding-top: 18vw;
 	padding-bottom: -10px;
 }
 .wrapper {
@@ -271,14 +271,14 @@ input:checked + label .description {
 }
 .btn1 {
 	width: 100%;
-	height: 40px;
-	margin-top: 5px;
+	height: 4vw;
+	margin-top: 5vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 button {
-	padding: 1.2vw 4vw;
+	padding: 1.2vw 8vw;
 	background-color: var(--blue);
 	color: var(--grey);
 	border: none;
@@ -288,6 +288,7 @@ button {
 	font-size: 1vw;
 	font-weight: 500;
 	transition: 0.4s;
+	font-size: 1.4vw;
 }
 button:hover {
 	background-color: var(--grey);
@@ -403,9 +404,7 @@ button:hover {
 	border-radius: 10px;
 	transition: ease-out 0.4s;
 }
-.work-card p {
-	width: 20vw;
-}
+
 .work-card:hover {
 	zoom: 104%;
 	margin-top: 0.5vw;
@@ -422,6 +421,9 @@ button:hover {
 	transition: ease-in-out;
 	transition-duration: 0.4s;
 }
+#work h1 {
+	font-size: 5vw;
+}
 .work-section h3 {
 	font-size: 1.4vw;
 	font-family: "montserrat";
@@ -434,6 +436,9 @@ button:hover {
 	letter-spacing: 2px;
 	transition: 0.6s;
 	text-shadow: 2px 2px 30px rgba(146, 100, 255, 0.2);
+}
+.work-card p {
+	width: 20vw;
 }
 .arrow {
 	border: solid var(--lime2);
@@ -554,10 +559,6 @@ button:hover {
 		transition: ease-out 0.4s;
 	}
 
-	.work-card p {
-		width: 100%;
-	}
-
 	.bounce {
 		padding: 80px 0 10px 0;
 		transition: 0.9s;
@@ -574,15 +575,24 @@ button:hover {
 		);
 		animation: none;
 	}
+	.work-card p {
+		width: 100%;
+	}
 
 	.services-card {
 		width: 90%;
-		height: 10vw;
+		height: 22vw;
 		transition: 0.7s;
+		h4 {
+			font-size: 2.8vw;
+		}
+		p {
+			font-size: 2.4vw;
+		}
 	}
 	.services-card:hover {
 		width: 90%;
-		height: 12vw;
+		height: 24vw;
 		transition: 0.7s;
 	}
 
@@ -597,7 +607,7 @@ button:hover {
 		zoom: normal;
 	}
 	.card {
-		width: 80vw;
+		width: 90vw;
 		height: 50vw;
 		border-radius: 0;
 		background-size: cover;
@@ -653,36 +663,141 @@ button:hover {
 	}
 }
 
-@media (max-width: 600px) {
-	.socials {
-		display: none;
+@media screen and (max-width: 440px) {
+	.projects {
+		margin-top: 0px;
 	}
-}
-
-@media screen and (max-width: 412px) {
+	.headshot {
+		width: 50vw;
+	}
 	.introduction h1 {
 		font-size: 4vw;
 	}
 
 	.introduction p {
-		font-size: 2vw;
+		font-size: 3.5vw;
+		padding: 2vw;
+	}
+
+	.introduction a {
+		font-size: 3vw;
+		padding: 2vw;
+	}
+
+	#work > h1 {
+		font-size: 5vw;
+	}
+
+	.work-section h3 {
+		font-size: 2.8vw;
 	}
 
 	.work-section h6 {
-		font-size: 1.5vw;
+		font-size: 2vw;
 		margin: 10px 0 8px;
 	}
 
 	.work-section p {
-		font-size: 1.8vw;
+		width: 100%;
+		font-size: 2.8vw;
 	}
 
+	.work-card {
+		height: 100%;
+	}
+
+	.description p {
+		color: #b0b0ba;
+		padding-top: 0px;
+		margin-bottom: 20px;
+		margin-top: -5px;
+	}
+	.description h4,
+	a {
+		text-decoration: none;
+	}
+	.description h4 {
+		z-index: 1;
+
+		text-transform: uppercase;
+		height: 10px;
+		color: var(--lime2);
+		text-shadow: 0px 0px 5px black;
+		transition: 0.7s;
+	}
+	.description h4:hover {
+		letter-spacing: 0.2vw;
+		transition: 0.7s;
+	}
+
+	input {
+		width: 100%;
+	}
+	input:checked + label {
+		width: 80vw;
+	}
+
+	input label,
+	.description {
+		opacity: 1 !important;
+		transform: translateY(0px) !important;
+		h4 {
+			font-size: 2.4vw;
+		}
+		p {
+			font-size: 2.4vw;
+		}
+	}
+
+	.services-card {
+		width: 90%;
+		height: 42vw;
+		transition: 0.7s;
+		h4 {
+			font-size: 3.4vw;
+		}
+		p {
+			font-size: 3.4vw;
+		}
+	}
+	.services-card:hover {
+		width: 90%;
+		height: 44vw;
+		transition: 0.7s;
+	}
+
+	.quote-container {
+		width: 25vw;
+	}
+
+	.about-container {
+		height: 55vw;
+		width: 50vw;
+		margin: 2vw;
+
+		button {
+			margin: 5vw 0;
+			height: 10vw;
+			width: 22vw;
+		}
+	}
+	.about-btn {
+		background-color: var(--white);
+		padding: 0vw 0vw;
+		.btn-p {
+			font-size: 2.8vw;
+			color: rgb(26, 26, 26);
+		}
+	}
 	.about-container h2 {
-		font-size: 10vw;
+		margin: 5px;
+		padding-top: 5vw;
+		font-size: 3.4vw;
 	}
 
 	.about-container p {
-		margin: -5px;
+		margin: 5px;
+		font-size: 2.8vw;
 	}
 }
 
