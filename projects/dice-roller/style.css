@@ -11,6 +11,7 @@ h1 {
 }
 h7 {
 	z-index: -2;
+	font-size: 3.4vw !important;
 }
 .photo {
 	width: 80%;

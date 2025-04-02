@@ -35,7 +35,7 @@ h7 {
 h1 {
 	color: rgb(43, 5, 114) !important;
 	font-family: Jetbrains Mono !important;
-	font-size: 2.4rem !important;
+	font-size: 2.4vw !important;
 }
 .temp-convertor {
 	z-index: 1;

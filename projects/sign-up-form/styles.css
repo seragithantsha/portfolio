@@ -100,3 +100,11 @@ input[type="password"]:hover {
 	outline: none;
 	transition: 0.4s;
 }
+
+@media (max-width: 768px) {
+	.auth-modal .link-container img {
+		width: 17vw;
+		margin: 6px;
+		border-radius: 5px;
+	}
+}
