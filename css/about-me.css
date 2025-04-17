@@ -1,46 +1,28 @@
-.about {
-	width: 100%;
-}
-.about-image {
-	display: flex;
-	justify-content: center;
-	margin-top: 0px;
-	width: 100%;
+:root {
+	--lime: rgb(182, 233, 0);
+	--blue: rgb(108, 122, 247);
+	--blue2: rgb(75, 92, 245);
+	--blue3: rgb(48, 68, 245);
+	--lime2: rgb(120, 153, 0);
+	--lime3: rgb(72, 92, 2);
+	--grey: rgb(17, 17, 17);
+	--white: rgb(182, 182, 182);
 }
 
-.about-image img {
-	width: 70%;
-	position: absolute;
-	justify-content: center;
-	background-size: contain;
-	padding: 20px;
-	border-radius: 30px;
-	margin-top: -140px;
-	opacity: 80%;
-}
-.about-image h3 {
-	transition: 0.7s;
-	display: flex;
-	position: absolute;
-	top: 50px;
-	color: #b0b0ba3a;
-}
-.abou {
-	transition: 0.7s;
-}
 .about-me {
 	background-color: rgb(59, 62, 77);
 	text-align: center;
 	padding: 80px;
-	padding-top: 20vw;
-	padding-bottom: 30vw;
+	padding-top: 6vw;
+	padding-bottom: 10vw;
+
 	h3 {
 		color: #a0a0b6;
-		font-size: 5vw;
+		font-size: 3vw;
 	}
 	p {
 		padding: 0px 12vw;
-		font-size: 2.5vw;
+		font-size: 2vw;
 		font-weight: 400;
 		color: #a0a0b6;
 	}
@@ -55,12 +37,29 @@
 
 .about-btn {
 	margin: 5vw;
+	transition: 0.7s;
+	border: transparent;
+	border-radius: 6px;
+	background-color: var(--lime);
+	p {
+		color: rgb(49, 49, 49);
+		font-weight: 500;
+	}
+	animation-name: glow1;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
 }
 .about-btn:hover {
 	cursor: pointer;
+	background-color: var(--grey);
+	transform: translateY(-10px);
+	border-radius: 40px;
 	p {
-		color: rgba(78, 78, 78, 0.678);
+		color: var(--lime);
 	}
+	animation-name: glow2;
+	animation-duration: 3s;
 }
 
 @media screen and (max-width: 600px) {
@@ -109,5 +108,31 @@ section a {
 		border-radius: 30px;
 		margin-top: -60px;
 		opacity: 80%;
+	}
+}
+
+/**Animations*/
+
+@keyframes glow1 {
+	0% {
+		box-shadow: none;
+	}
+	60% {
+		box-shadow: -5px 5px 65px -25px var(--lime);
+	}
+	100% {
+		box-shadow: none;
+	}
+}
+
+@keyframes glow2 {
+	0% {
+		box-shadow: none;
+	}
+	60% {
+		box-shadow: inset -5px 35px 45px -55px rgba(200, 255, 0, 0.719);
+	}
+	100% {
+		box-shadow: none;
 	}
 }

@@ -1,3 +1,14 @@
+:root {
+	--lime: rgb(182, 233, 0);
+	--blue: rgb(108, 122, 247);
+	--blue2: rgb(75, 92, 245);
+	--blue3: rgb(48, 68, 245);
+	--lime2: rgb(120, 153, 0);
+	--lime3: rgb(72, 92, 2);
+	--grey: rgb(17, 17, 17);
+	--white: rgb(182, 182, 182);
+}
+
 .cont {
 	width: 100%;
 }
