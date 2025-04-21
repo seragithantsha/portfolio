@@ -165,10 +165,10 @@
 	background-image: url(../images/5.jpg);
 }
 .card[for="c2"] {
-	background-image: url(../images/2.jpg);
+	background-image: url(https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
 }
 .card[for="c3"] {
-	background-image: url(../images/3.jpg);
+	background-image: url(../images/agency.jpg);
 }
 .card[for="c4"] {
 	background-image: url(../images/Calculator.JPG);
@@ -381,6 +381,7 @@ button:hover {
 	color: var(--white);
 	width: 31vw;
 	transition: 0.7s;
+	cursor: text;
 
 	h4 {
 		letter-spacing: 0.1vw;
