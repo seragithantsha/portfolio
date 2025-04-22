@@ -142,9 +142,14 @@
 
 .container {
 	height: 400px;
+	width: auto;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: rgb(21, 19, 37);
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: start;
+	box-shadow: 0px 10px 30px -5px rgb(0, 0, 0);
 }
 
 .card {
@@ -161,6 +166,25 @@
 	box-shadow: 0px 10px 20px -5px rgb(0, 0, 0);
 }
 
+.hint {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	font-family: jetbrains mono, monospace;
+	transform: translate(-200px, -80px);
+	width: 180px;
+	height: 10px;
+	rotate: -90deg;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.6s;
+	p {
+		font-size: 0.6rem;
+		color: var(--lime2);
+	}
+}
+
 .card[for="c1"] {
 	background-image: url(../images/5.jpg);
 }
@@ -171,7 +195,7 @@
 	background-image: url(../images/agency.jpg);
 }
 .card[for="c4"] {
-	background-image: url(../images/Calculator.JPG);
+	background-image: url(../images/3.jpg);
 }
 
 #ci1:hover {
@@ -182,7 +206,7 @@
 		animation-timing-function: ease-in-out;
 	}
 
-	transform: translateX(-10px);
+	transform: translateX(5px);
 	transition: 1s;
 }
 #ci2:hover {
@@ -215,7 +239,7 @@
 		animation-timing-function: ease-in-out;
 	}
 
-	transform: translateX(10px);
+	transform: translateX(-5px);
 	transition: 1s;
 }
 .card > .row {
@@ -288,7 +312,7 @@ input:checked + label .description {
 .btn1 {
 	width: 100%;
 	height: 4vw;
-	margin-top: 5vw;
+	margin-top: 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -574,6 +598,10 @@ button:hover {
 		padding: 80px 0 10px 0;
 		transition: 0.9s;
 		transition: ease-in-out;
+	}
+
+	.hint {
+		display: none;
 	}
 
 	.work-card {
@@ -945,6 +973,18 @@ button:hover {
 	}
 	60% {
 		box-shadow: inset -5px 35px 30px -35px rgba(255, 255, 255, 0.137);
+	}
+	100% {
+		box-shadow: none;
+	}
+}
+
+@keyframes card {
+	0% {
+		box-shadow: none;
+	}
+	60% {
+		box-shadow: 0px 0px 20px 1px rgba(149, 168, 80, 0.113);
 	}
 	100% {
 		box-shadow: none;
